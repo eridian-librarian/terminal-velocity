@@ -50,7 +50,7 @@ body * {
 /* Keep hover border effect */
 .image-section a.w3-button:hover,
 #mobile-nav a.w3-bar-item:hover {
-  border-bottom: 2px solid #2196F3 !important; /* Matches W3.CSS blue */
+  border-bottom: 2px solid #5CE1E6 !important; /* Matches W3.CSS blue */
 }
   
   .links {
