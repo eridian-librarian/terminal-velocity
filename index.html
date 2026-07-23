@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,17 +39,24 @@ td, th {
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
       </div>
       
-      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
-        <a href="#navigation" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">navigate</a>
-        <a href="#listing" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">list and locate</a>
-        <a href="#moveandcopy" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">move and copy</a>
-        <a href="#edit" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">edit and convert</a>
-        <a href="#specs" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">machine and network</a>
-        <a href="#notes" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">notes</a>
-        <a href="#resources" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">about</a>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky" style="text-align: left;">
+        <a href="#resources" class="w3-bar-item" style="font-weight: bold; font-size: 14px; padding: 8px 16px; text-transform: uppercase; letter-spacing: 1px; color: #5CE1E6; text-decoration: none;" onclick="toggleNavigation()">About</a>
+
+        <div class="w3-bar-item" style="font-weight: bold; font-size: 14px; padding: 8px 16px; text-transform: uppercase; letter-spacing: 1px; color: #5CE1E6;">One-Line Commands</div>
+  
+        <div style="margin-left: 12px; border-left: 2px solid #ddd;">
+          <a href="#navigation" class="w3-bar-item w3-button w3-hover-light-grey w3-small" style="text-align: left; padding-left: 12px;" onclick="toggleNavigation()">Navigate</a>
+          <a href="#listing" class="w3-bar-item w3-button w3-hover-light-grey w3-small" style="text-align: left; padding-left: 12px;" onclick="toggleNavigation()">List &amp; Locate</a>
+          <a href="#moveandcopy" class="w3-bar-item w3-button w3-hover-light-grey w3-small" style="text-align: left; padding-left: 12px;" onclick="toggleNavigation()">Move &amp; Copy</a>
+          <a href="#edit" class="w3-bar-item w3-button w3-hover-light-grey w3-small" style="text-align: left; padding-left: 12px;" onclick="toggleNavigation()">Edit &amp; Convert</a>
+          <a href="#specs" class="w3-bar-item w3-button w3-hover-light-grey w3-small" style="text-align: left; padding-left: 12px;" onclick="toggleNavigation()">Machine &amp; Network</a>
+          <a href="#notes" class="w3-bar-item w3-button w3-hover-light-grey w3-small" style="text-align: left; padding-left: 12px;" onclick="toggleNavigation()">Notes</a>
+        </div>
+  
+        <div class="w3-bar-item" style="font-weight: bold; font-size: 14px; padding: 8px 16px; text-transform: uppercase; letter-spacing: 1px; color: #5CE1E6;">Scripts <span style="font-weight: normal; font-style: italic; font-size: 12px; color: #aaa;">coming soon</span></div>
       </div>
 
-      <!-- Sidebar -->
+      <!-- SIDEBAR -->
       <section class="image-section w3-quarter w3-fixed w3-padding-small" style="height: 100vh; overflow-y: auto;">
         
         <!--IMAGE/AVATAR-->
@@ -62,322 +68,29 @@ td, th {
           <h5><i></i></h5>
         </div>
         
-        <!--Side nav menu-->
-        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
-          <p><a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important; font-weight: bold;" onclick="toggleNavigation()">About</a></p>
-          <p class="w3-bar-item w3-button w3-hover-none w3-left-align w3-hide-small" style="font-weight: bold; pointer-events: none; border-width: 2px !important;">One-Line Commands</p>
-            <div style="margin-left: 20px;">
-              <p><a href="#navigation" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">navigate</a></p>
-              <p><a href="#listing" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">list and locate</a></p>
-              <p><a href="#moveandcopy" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">move and copy</a></p>
-              <p><a href="#edit" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">edit and convert</a></p>
-              <p><a href="#specs" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">machine and network</a></p>
-              <p><a href="#notes" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">notes</a></p>
-            </div>
-          <p class="w3-bar-item w3-button w3-hover-none w3-left-align w3-hide-small" style="font-weight: bold; pointer-events: none; border-width: 2px !important;">Scripts <i>(coming soon!)</i></p>
+        <!--SIDE NAV MENU-->
+        <div class="w3-bar-block w3-border-bottom w3-hide-small" style="text-align: left;">
+          <a href="index.html" class="w3-bar-item" style="font-weight: bold; font-size: 14px; padding: 8px 16px; text-transform: uppercase; letter-spacing: 1px; color: #5CE1E6; text-decoration: none;">About</a>
+  
+          <div class="w3-bar-item" style="font-weight: bold; font-size: 14px; padding: 8px 16px; text-transform: uppercase; letter-spacing: 1px; color: #5CE1E6;">One-Line Commands</div>
+  
+          <div style="margin-left: 12px; border-left: 2px solid #ddd;">
+            <a href="#navigation" class="w3-bar-item w3-button w3-hover-light-grey w3-small" style="text-align: left; padding-left: 12px;">Navigate</a>
+            <a href="#listing" class="w3-bar-item w3-button w3-hover-light-grey w3-small" style="text-align: left; padding-left: 12px;">List &amp; Locate</a>
+            <a href="#moveandcopy" class="w3-bar-item w3-button w3-hover-light-grey w3-small" style="text-align: left; padding-left: 12px;">Move &amp; Copy</a>
+            <a href="#edit" class="w3-bar-item w3-button w3-hover-light-grey w3-small" style="text-align: left; padding-left: 12px;">Edit &amp; Convert</a>
+            <a href="#specs" class="w3-bar-item w3-button w3-hover-light-grey w3-small" style="text-align: left; padding-left: 12px;">Machine &amp; Network</a>
+            <a href="#notes" class="w3-bar-item w3-button w3-hover-light-grey w3-small" style="text-align: left; padding-left: 12px;">Notes</a>
         </div>
-        <div class="content-container w3-margin-top-2">
+  
+        <div class="w3-bar-item" style="font-weight: bold; font-size: 14px; padding: 8px 16px; text-transform: uppercase; letter-spacing: 1px; color: #5CE1E6;">Scripts <span style="font-weight: normal; font-style: italic; font-size: 12px; color: #aaa;">coming soon</span></div>
+        </div>
       </section>
 
       <!--CV CONTENT SECTION-->
       <section class="w3-threequarter w3-padding-large w3-right">
         <!--DESKTOP NAVIGATION-->
         <div class="content-container w3-margin-top-2">
-
-      <!--NAVIGATION-->
-<h3 id="navigation">navigate your file system</h3>
-<table>
-  <tr>
-    <th>task</th>
-    <th>Windows PowerShell</th>
-    <th>Bash</th>
-  </tr>
-  <tr>
-    <td>locate current directory</td>
-    <td>get-location</td>
-    <td>pwd</td>
-  </tr>
-  <tr>
-    <td>change directory one forward</td>
-    <td>cd <span style="color: #5CE1E6">Downloads</span></td>
-    <td>cd <span style="color: #5CE1E6">Downloads</span></td>
-  </tr>
-  <tr>
-    <td>change directory one back</td>
-    <td>cd ..</td>
-    <td>cd ..</td>
-  </tr>
-  <tr>
-    <td>change to a directory that includes a space</td>
-    <td>cd "<span style="color: #5CE1E6">Meeting agendas</span>"</td>
-    <td>cd "<span style="color: #5CE1E6">Meeting agendas</span>"</td>
-  </tr>
-  <tr>
-    <td>change directory to home user</td>
-    <td>cd ~</td>
-    <td>cd ~</td>
-  </tr>
-  <tr>
-    <td>change prompt to different user</td>
-    <td>cd <span style="color: #5CE1E6">C</span>:\Users\<span style="color: #5CE1E6">michelle</span></td>
-    <td>su - <span style="color: #5CE1E6">michelle</span></td>
-  </tr>
-  <tr>
-    <td>show username</td>
-    <td>get-localuser</td>
-    <td>whoami</td>
-  </tr>
-  </table>
-
-  <!--LIST CONTENTS-->
-<h3 id="listing">list and locate files</h3>
-  <table>
-  <tr>
-    <th>task</th>
-    <th>Windows PowerShell</th>
-    <th>Bash</th>
-  </tr>
-  <tr>
-    <td>list all files in current directory</td>
-    <td>get-childitem</td>
-    <td>ls -lh -1</td>
-  </tr>
-  <tr>
-    <td>list files in directory, name only</td>
-    <td>ls -name</td>
-    <td>ls -1</td>
-  </tr>
-  <tr>
-    <td>list files in directory, filter by file type</td>
-    <td>get-childitem -filter "*.<span style="color: #5CE1E6">pdf</span>"</td>
-    <td>find . -name "*.<span style="color: #5CE1E6">pdf</span>"</td>
-  </tr>
-  <tr>
-    <td>list files in directory, filter by file type AND only print file names</td>
-    <td>get-childitem -name -filter "*.<span style="color: #5CE1E6">pdf</span>"</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>list files in directory, filter by multiple file types</td>
-    <td>get-childitem -file | where-object { $_.Extension -in ".<span style="color: #5CE1E6">pdf</span>", ".<span style="color: #5CE1E6">mp3</span>" }</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>list files in directory, filter by the beginning of a file name</td>
-    <td>get-childitem -filter "*<span style="color: #5CE1E6">2024</span>*"</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>list files in directory, filter by the beginning of a file name AND file type</td>
-    <td>get-childitem -filter "<span style="color: #5CE1E6">2024</span>_*.pdf"</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>list files in directory, sort by largest to smallest</td>
-    <td>get-childitem -file | sort-object -property length -descending</td>
-    <td>ls -laS -lh</td>
-  </tr>
-  <tr>
-    <td>list files in directory, show 10 largest files</td>
-    <td>get-childitem -file | sort-object -property length -descending | select-object -first 10</td>
-    <td>ls -laS -lh | head -n 10</td>
-  </tr>
-  <tr>
-    <td>list files in directory, filter by files larger than x-size</td>
-    <td>get-childitem -file | where-object { $_.Length -gt <span style="color: #5CE1E6">100mb</span>}</td>
-    <td>find . -type f -size +<span style="color: #5CE1E6">100M</span></td>
-  </tr>
-  <tr>
-    <td>list files in directory, filter by files within a size range</td>
-    <td>get-childitem -file | where-object { $_.Length -gt <span style="color: #5CE1E6">10mb</span> -and $_.Length -lt <span style="color: #5CE1E6">100mb</span> }</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>list files in directory, show in alphabetical order</td>
-    <td>get-childitem | sort-object -property name</td>
-    <td>ls</td>
-  </tr>
-  <tr>
-    <td>list files in directory, show only file names in alphabetical order</td>
-    <td></td>
-    <td>ls</td>
-  </tr>
-  <tr>
-    <td>list files in directory, sort by last edited (newest-to-oldest)</td>
-    <td>get-childitem -file | sort-object -property lastwritetime -descending</td>
-    <td>ls -t</td>
-  </tr>
-  <tr>
-    <td>list files in directory, sort by 10 most recently edited</td>
-    <td>get-childitem -file | sort-object -property lastwritetime -descending | select-object -first 10</td>
-    <td>ls -t -1 | head -10</td>
-  </tr>
-  <tr>
-    <td>list files in directory, sort by 10 least recently edited</td>
-    <td>get-childitem -file | sort-object -property lastwritetime -ascending | select-object -first 10</td>
-    <td>ls -lh -ltr -1 | head -10</td>
-  </tr>
-  <tr>
-    <td>list files in directory in table view</td>
-    <td>get-childitem | format-table -autosize name, length, lastwritetime</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>list files in directory, show count of each file type</td>
-    <td>get-childitem -recurse -file | group-object extension | sort-object count -descending</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>list files in directory, export to txt file</td>
-    <td>ls -name >> <span style="color: #5CE1E6">inventory</span>.txt</td>
-    <td>ls > <span style="color: #5CE1E6">inventory</span>.txt</td>
-  </tr>
-  <tr>
-    <td>list files in directory, export file paths to txt</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>list all hidden files in directory</td>
-    <td></td>
-    <td>ls -a -1</td>
-  </tr>
-  <tr>
-    <td>locate a specific file</td>
-    <td></td>
-    <td>find <span style="color: #5CE1E6">~/Documents</span> -name "<span style="color: #5CE1E6">1994report.jpg</span>"</td>
-  </tr>
-  <tr>
-    <td>locate a file based on file type</td>
-    <td>get-childitem -recurse -filter "*.<span style="color: #5CE1E6">wav</span>"</td>
-    <td></td>
-  </tr>
-    
-</table>
-
-    <!--MOVE AND COPY-->
-<h3 id="moveandcopy">move and copy files</h3>
-<table>
-  <tr>
-    <th>task</th>
-    <th>Windows PowerShell</th>
-    <th>Bash</th>
-  </tr>
-  <tr>
-    <td>move a file</td>
-    <td>move-item "<span style="color: #5CE1E6">presentation.pdf</span>" -desination "<span style="color: #5CE1E6">C</span>:\Users\<span style="color: #5CE1E6">michelle</span>\<span style="color: #5CE1E6">archive</span>"</td>
-    <td>mv <span style="color: #5CE1E6">presentation.pdf</span> ~/<span style="color: #5CE1E6">archive</span></td>
-  </tr>
-  <tr>
-    <td>move multiple files</td>
-    <td></td>
-    <td>mv <span style="color: #5CE1E6">file1.doc</span> <span style="color: #5CE1E6">file2.pdf</span> ~/<span style="color: #5CE1E6">archive</span></td>
-  </tr>
-  <tr>
-    <td>move all of a specific file type</td>
-    <td>move-item *.<span style="color: #5CE1E6">mp4</span> -destination "<span style="color: #5CE1E6">C</span>:\Users\<span style="color: #5CE1E6">michelle</span>\<span style="color: #5CE1E6">archive</span>"</td>
-    <td>mv *.<span style="color: #5CE1E6">mp4</span> ~<span style="color: #5CE1E6">archive</span></td>
-  </tr>
-  <tr>
-    <td>move all files in a directory</td>
-    <td>move-item * -desintation "<span style="color: #5CE1E6">C</span>:\Users\<span style="color: #5CE1E6">michelle</span>\<span style="color: #5CE1E6">archive</span>"</td>
-    <td>mv * ~/<span style="color: #5CE1E6">archive</span></td>
-  </tr>
-  <tr>
-    <td>copy a file</td>
-    <td>copy-item "<span style="color: #5CE1E6">project.doc</span>" -destination "<span style="color: #5CE1E6">C</span>:\Users\<span style="color: #5CE1E6">michelle</span>\<span style="color: #5CE1E6">archive</span>"</td>
-    <td>cp <span style="color: #5CE1E6">project.doc</span> ~/<span style="color: #5CE1E6">archive</span></td>
-  </tr>
-  <tr>
-    <td>copy multiple files</td>
-    <td></td>
-    <td>cp <span style="color: #5CE1E6">interview.mp3</span> <span style="color: #5CE1E6">transcript.txt</span> ~/<span style="color: #5CE1E6">archive</span></td>
-  </tr>
-</table>
-
-    <!--ALTERING FILES-->
-<h3 id="edit">edit and convert files</h3>
-<table>
-  <tr>
-    <th>task</th>
-    <th>Windows PowerShell</th>
-    <th>Bash</th>
-  </tr>
-  <tr>
-    <td>create a file</td>
-    <td></td>
-    <td>touch <span style="color: #5CE1E6">test.txt</span>\</td>
-  </tr>
-  <tr>
-    <td>rename a file</td>
-    <td>rename-item "<span style="color: #5CE1E6">2014-agenda.doc</span>" -newname "<span style="color: #5CE1E6">2015-agenda.doc</span>"</td>
-    <td>mv <span style="color: #5CE1E6">2014-agenda.doc</span> <span style="color: #5CE1E6">2015-agenda.doc</span></td>
-  </tr>
-  <tr>
-    <td>rename multiple files</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>convert file type (image files)</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>convert file type (audiovisual files)</td>
-    <td></td>
-    <td>ffmpeg -i <span style="color: #5CE1E6">interview.mp3</span> <span style="color: #5CE1E6">interview.wav</span></i></td>
-  </tr>
-  <tr>
-    <td>check image file metadata</td>
-    <td></td>
-    <td>exiftool <span style="color: #5CE1E6">eventphotos.jpg</span></td>
-  </tr>
-  <tr>
-    <td>remove all image file metadata</td>
-    <td></td>
-    <td>exiftool -all= <span style="color: #5CE1E6">eventphotos.jpg</span></td>
-  </tr>
-</table>
-
-  <!--SPECS-->
-<h3 id="specs">machine and network specs</h3>
-<table>
-  <tr>
-    <th>task</th>
-    <th>Windows PowerShell</th>
-    <th>Bash</th>
-  </tr>
-  <tr>
-    <td>check which shell you're using</td>
-    <td></td>
-    <td>echo $0</td>
-  </tr>
-  <tr>
-    <td>check OS version</td>
-    <td>winver</td>
-    <td>cat /etc/os-release</td>
-  </tr>
-  <tr>
-    <td>local machine name</td>
-    <td></td>
-    <td>hostname</td>
-  </tr>
-  <tr>
-    <td>check IP address</td>
-    <td></td>
-    <td>ip addr show</td>
-  </tr>
-</table>
-
-<h3 id="notes">notes</h3>
-<p>
-
-<b>-1</b>: gives each output on its own line (Bash only)<br>
-<b>-lh</b>: lists files in a human readable format (Bash only)<br>
-<b>Ctrl+Shift+C</b>: copies something in the terminal<br>
-<b>Ctrl+Shift+V</b>: pastes something in the terminal
-</p>
 
   <!--ABOUT-->
 <h3 id="resources">about the toolkit</h3>
